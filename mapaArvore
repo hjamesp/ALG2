@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+    int ciclo = 0;
+	int altura = 1;
+	int i = 0;
+	
+int main(void)
+{
+	printf("\nInforme o numero de ciclos: ");
+	scanf("%d",&i);
+	while (ciclo < i){
+		if(ciclo % 2 == 0){
+		altura = altura * 2;
+		}
+		else{
+			altura = altura + 1;
+		}
+		ciclo++;
+	}
+	printf("\nO tamanho e %d", altura);
+return (0);
+}
